@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:trips/button_purple.dart';
 import 'package:trips/review_list.dart';
 import 'package:trips/stars.dart';
 
@@ -33,7 +34,7 @@ class DescriptionPlace extends StatelessWidget{
     final title =
         Container(
           margin: const EdgeInsets.only(
-            top: 320.0,
+            top: 340.0,
             left: 20.0,
             right: 20.0,
             bottom: 20.0
@@ -58,14 +59,14 @@ class DescriptionPlace extends StatelessWidget{
             title,
             Container(
               margin: const EdgeInsets.only(
-                  top: 300.0,
-                  left: 3.0
+                  top: 325.0,
               ),
               child: Stars(4.5),
             )
           ],
         ),
         description,
+        ButtonPurple("Navigate"),
         ReviewList()
       ],
     );

@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:trips/card_image_list.dart';
 import 'package:trips/description_place.dart';
 import 'package:trips/gradient_background.dart';
+import 'package:trips/header_appbar.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.transparent
+    )
+  );
   runApp(const MyApp());
 }
 
@@ -38,12 +47,12 @@ class MyApp extends StatelessWidget {
         // body: DescriptionPlace("Punta Cana", "Excelente lugar para disfrutar.", 4.3),
         body: Stack(
           children: [
-            GradientBackground(),
             ListView(
               children: [
                 DescriptionPlace("Punta Cana", descriptionDummy, 4.3)
               ],
-            )
+            ),
+            HeaderAppbar()
           ],
         ),
       ) //const MyHomePage(title: 'Flutter Demo Home Page'),

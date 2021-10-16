@@ -13,7 +13,8 @@ class Review extends StatelessWidget{
 
     final userName = Container(
       margin: EdgeInsets.only(
-          left: 10
+          left: 10,
+          right: 10
       ),
       child: Text(
         name!,
@@ -29,7 +30,8 @@ class Review extends StatelessWidget{
     final userDetails = Container(
       margin: EdgeInsets.only(
           top: 5,
-          left: 10
+          left: 10,
+          right: 10
       ),
       child: Text(
         details!,
@@ -45,7 +47,8 @@ class Review extends StatelessWidget{
     final userComment = Container(
       margin: EdgeInsets.only(
           top: 5,
-          left: 10
+          left: 10,
+          right: 10
       ),
       child: Text(
         comment!,
@@ -64,7 +67,7 @@ class Review extends StatelessWidget{
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(
-          fit: BoxFit.cover,
+            fit: BoxFit.cover,
             image: AssetImage(pathImage!)
         )
       ),
@@ -73,8 +76,8 @@ class Review extends StatelessWidget{
     final dataContainer = Container(
         margin: EdgeInsets.only(
           top: 20,
-          left: 10,
-          right: 10,
+          left: 20,
+          right: 20,
           bottom: 10
         ),
       child: Row (
