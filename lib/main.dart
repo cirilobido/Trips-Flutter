@@ -4,6 +4,8 @@ import 'package:trips/card_image_list.dart';
 import 'package:trips/description_place.dart';
 import 'package:trips/gradient_background.dart';
 import 'package:trips/header_appbar.dart';
+import 'package:trips/navigation_trips.dart';
+import 'package:trips/review_list.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -23,12 +25,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    String descriptionDummy = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
-        "Lorem Ipsum has been the industry's standard dummy text ever since the "
-        "1500s, when an unknown printer took a galley of type and scrambled it "
-        "to make a type specimen book. It has survived not only five centuries, "
-        "but also the leap into electronic typesetting, remaining essentially ";
-
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -43,19 +39,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        // body: DescriptionPlace("Punta Cana", "Excelente lugar para disfrutar.", 4.3),
-        body: Stack(
-          children: [
-            ListView(
-              children: [
-                DescriptionPlace("Punta Cana", descriptionDummy, 4.3)
-              ],
-            ),
-            HeaderAppbar()
-          ],
-        ),
-      ) //const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: NavigationTrips() //const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

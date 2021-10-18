@@ -66,8 +66,7 @@ class DescriptionPlace extends StatelessWidget{
           ],
         ),
         description,
-        ButtonPurple("Navigate"),
-        ReviewList()
+        ButtonPurple("Navigate")
       ],
     );
 
