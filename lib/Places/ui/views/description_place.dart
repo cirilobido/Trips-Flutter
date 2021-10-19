@@ -1,9 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:trips/button_purple.dart';
-import 'package:trips/review_list.dart';
-import 'package:trips/stars.dart';
+import 'package:trips/widgets/button_purple.dart';
+import 'package:trips/widgets/stars.dart';
 
 class DescriptionPlace extends StatelessWidget{
   late String namePlace, descriptionPlace;

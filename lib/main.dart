@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:trips/card_image_list.dart';
-import 'package:trips/description_place.dart';
-import 'package:trips/gradient_background.dart';
-import 'package:trips/header_appbar.dart';
 import 'package:trips/navigation_trips.dart';
-import 'package:trips/review_list.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(

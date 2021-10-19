@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:trips/snackbar_widget.dart';
+import 'package:trips/widgets/snackbar_widget.dart';
 
 class ButtonPurple extends StatelessWidget {
   String buttonText = "Navigate";

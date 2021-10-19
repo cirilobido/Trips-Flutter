@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:trips/home_trips.dart';
-import 'package:trips/profile_trips.dart';
-import 'package:trips/search_trips.dart';
+import 'package:trips/Places/ui/views/home_trips.dart';
+import 'package:trips/Places/ui/views/search_trips.dart';
+
+import 'User/ui/views/profile_trips.dart';
 
 class NavigationTrips extends StatefulWidget{
   @override
