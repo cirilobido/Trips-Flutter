@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:trips/Places/ui/widgets/review_list.dart';
+import 'package:trips/Place/ui/widgets/review_list.dart';
 
 import 'description_place.dart';
 import '../../../User/ui/views/header_appbar.dart';
