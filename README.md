@@ -1,4 +1,4 @@
-# trips
+# Trips Flutter
 
 A new Flutter project.
 
